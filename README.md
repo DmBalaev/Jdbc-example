@@ -9,11 +9,15 @@
 
        cd Jdbc-example
 
-3. Build the maven project
+3. Run container for PostgerSql
+
+       docker-compose up
+   If you will be using your own database don't forget to change the settings in application.yaml
+
+
+4. Build the maven project
 
        mvn clean install
 
-4. Run container for PostgerSql
 
-       docker-compose up
 
