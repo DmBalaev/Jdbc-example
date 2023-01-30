@@ -1,0 +1,10 @@
+spring:
+  liquibase:
+    enabled: true
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5444/library_db
+    username: adm
+    password: 123
+    driver-class-name: org.postgresql.Driver
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect

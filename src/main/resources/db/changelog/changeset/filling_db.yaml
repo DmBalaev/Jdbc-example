@@ -1,0 +1,102 @@
+databaseChangeLog:
+  - changeSet:
+      id: add author and books
+      author: dm
+      changes:
+#author
+        - insert:
+            tableName: author
+            columns:
+              - column:
+                  name: name
+                  value: William Shakespeare
+        - insert:
+            tableName: author
+            columns:
+              - column:
+                  name: name
+                  value: Jane Austen
+        - insert:
+            tableName: author
+            columns:
+              - column:
+                  name: name
+                  value: Franz Kafka
+#books
+        - insert:
+            tableName: book
+            columns:
+              - column:
+                  name: name
+                  value: As You Like It
+
+        - insert:
+            tableName: book
+            columns:
+              - column:
+                  name: name
+                  value: The Tempest
+        - insert:
+            tableName: book
+            columns:
+              - column:
+                  name: name
+                  value: Pride and Prejudice
+        - insert:
+            tableName: book
+            columns:
+              - column:
+                  name: name
+                  value: The Metamorphosis
+        - insert:
+            tableName: book
+            columns:
+              - column:
+                  name: name
+                  value: The Basic Kafka
+# s
+        - insert:
+            tableName: books_author
+            columns:
+              - column:
+                  name: book_id
+                  value: 1
+              - column:
+                  name: author_id
+                  value: 1
+        - insert:
+            tableName: books_author
+            columns:
+              - column:
+                  name: book_id
+                  value: 2
+              - column:
+                  name: author_id
+                  value: 1
+        - insert:
+            tableName: books_author
+            columns:
+              - column:
+                  name: book_id
+                  value: 3
+              - column:
+                  name: author_id
+                  value: 2
+        - insert:
+            tableName: books_author
+            columns:
+              - column:
+                  name: book_id
+                  value: 4
+              - column:
+                  name: author_id
+                  value: 3
+        - insert:
+            tableName: books_author
+            columns:
+              - column:
+                  name: book_id
+                  value: 5
+              - column:
+                  name: author_id
+                  value: 3
